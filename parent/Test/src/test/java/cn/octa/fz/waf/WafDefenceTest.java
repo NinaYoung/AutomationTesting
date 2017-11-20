@@ -42,7 +42,7 @@ public class WafDefenceTest extends AbstractTest {
 		String attackDetails = wafPageExt.getRadarAttackDetailsLabel().getText();
 		int	origialCount = AttackUtils.getAttackCount(attackDetails);
 		
-        // Change status to alarm
+        // Change status to defence
 		wafPageExt.clickSetDefenceButton();
 		wafPageExt.changeDefenceStatus(data.getHostname(), data.getStatus());
 		if(wafPageExt.getMsgConfirmButton().isDisplayed() && wafPageExt.getAttackChangeMsgLabel().equals(data.getAttackChangeMsg())){

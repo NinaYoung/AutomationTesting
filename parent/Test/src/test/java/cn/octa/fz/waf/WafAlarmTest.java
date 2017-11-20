@@ -57,14 +57,6 @@ public class WafAlarmTest extends AbstractTest {
 		// Back to fz again 
 		driver.get(AbstractData.getUrl());
 		
-//		// Go to databasepage to check topology
-//		DataBasePageExt dataBasePageExt = homePageExt.gotoDataBasePage();
-//		Thread.sleep(2000);
-//		takeScreenshot(driver.getTitle());
-//
-//		// DVWA attack again, should get 403
-//		DVWABasePageExt.sqlDefenceAttack(driver);
-		
 		// Go to Waf page
 		wafPageExt = homePageExt.gotoWafPage();
 		Thread.sleep(20000);
