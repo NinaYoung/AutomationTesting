@@ -5,6 +5,13 @@
 <!--
 	<parameter name="testEnv" value="${testEnv}"/>
   -->
+  
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>
+    
+  
 	<parameter name="browser" value="*firefox" />
 
 	<parameter name="firefoxProfile" value="default"></parameter>
@@ -24,11 +31,16 @@
     	</groups>
 	</test>
  -->    
- <test name = "waf">
+ 
+ <test name = "waf" preserve-order="true">
+ 	
  	<classes>
  		<class name="cn.octa.fz.waf.WafDefenceTest"></class>
  		<class name="cn.octa.fz.waf.WafAlarmTest"></class>
  		<class name="cn.octa.fz.waf.WafDefenceAutomaticTest"></class>
  	</classes>
+	
  </test>
+  
+  
 </suite>
