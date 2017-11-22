@@ -31,7 +31,7 @@
     	</groups>
 	</test>
  -->    
- 
+ <!-- 
  <test name = "waf" preserve-order="true">
  	
  	<classes>
@@ -41,6 +41,11 @@
  	</classes>
 	
  </test>
-  
+   -->
+  <test name = "login">
+  	<classes>
+  		<class name="cn.octa.fz.login.LoginChangePasswordHappyFlowTest"></class>
+  	</classes>
+  </test>
   
 </suite>
